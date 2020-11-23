@@ -22,6 +22,6 @@ describe("do", () => {
   });
   test("print contains city", () => {
     const harry = new Person("Harry", "Potter", "Hogwarts");
-    expect(harry.print()).toContain("from Hogwarts");
+    expect(harry.print()).toContain("Hogwarts");
   });
 });
