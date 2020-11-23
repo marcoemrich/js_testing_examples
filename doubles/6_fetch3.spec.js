@@ -60,6 +60,8 @@ describe("fetchPeople", () => {
 
 /*
 
-Note: don't mock what you don't own => maybe use a fetch wrapper
+Note:
+ * don't mock what you don't own => maybe use a fetch wrapper
+ * maybe use jest-fetch-mock
 
 */
