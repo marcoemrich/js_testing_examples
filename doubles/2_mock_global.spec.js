@@ -2,7 +2,7 @@ import { jest } from "@jest/globals";
 
 const greet = (name) => print("Hello " + name);
 
-window.print = jest.fn();
+globalThis.print = jest.fn();
 
 describe("Mock Example: greet", () => {
   beforeEach(() => {
@@ -13,8 +13,9 @@ describe("Mock Example: greet", () => {
 
     expect(print).toBeCalledWith("Hello Alice");
   });
-  xit("don't forget to clear", () => {
-    expect(print).toBeCalledWith("Hello Alice");
+  it("don't forget to clear", () => {
+    // no execution
+    expect(print).not.toBeCalledWith("Hello Alice");
   });
 });
 
