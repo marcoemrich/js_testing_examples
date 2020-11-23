@@ -2,7 +2,7 @@ import { jest } from "@jest/globals";
 
 const greet = (name) => print("Hello " + name);
 
-global.print = jest.fn();
+window.print = jest.fn();
 
 describe("Mock Example: greet", () => {
   beforeEach(() => {
