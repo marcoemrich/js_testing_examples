@@ -17,4 +17,9 @@ describe("Mock Example: greet", () => {
     ]);
     expect(numberOfActiveTodos()).toEqual(2);
   });
+
+  it("don't forget to clear", () => {
+    // no execution
+    expect(localStorage.getItem).not.toBeCalled();
+  });
 });

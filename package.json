@@ -12,7 +12,8 @@
   "type": "module",
   "devDependencies": {
     "@types/jest": "^26.0.15",
-    "jest": "^26.6.3"
+    "jest": "^26.6.3",
+    "jest-fetch-mock": "^3.0.3"
   },
   "dependencies": {
     "@types/isomorphic-fetch": "^0.0.35",

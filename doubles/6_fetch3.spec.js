@@ -62,6 +62,5 @@ describe("fetchPeople", () => {
 
 Note:
  * don't mock what you don't own => maybe use a fetch wrapper
- * maybe use jest-fetch-mock
-
+ * https://www.leighhalliday.com/mock-fetch-jest
 */

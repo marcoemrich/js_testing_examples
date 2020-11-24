@@ -1,5 +1,7 @@
 import { jest } from "@jest/globals";
 
+// don't mock what you don't own
+
 const getTodosFromStorage = () => localStorage.getItem("active_todos");
 
 const numberOfActiveTodos = (items) => items.filter((i) => i.active).length;
