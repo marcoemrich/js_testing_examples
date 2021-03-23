@@ -11,6 +11,21 @@ class Person {
   }
 }
 
+// let createPerson = (id) => {
+//   const read = function (id) {
+//     //fetch from API
+//   };
+
+//   return {
+//     read: read,
+
+//     fullName: function () {
+//       const personData = this.read(id);
+//       return personData.firstName + " " + personData.name;
+//     },
+//   };
+// };
+
 describe("Stub Example", () => {
   it("should return full name of Person from API", () => {
     const p = new Person();
