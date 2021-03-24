@@ -3,11 +3,15 @@ import fetch from "isomorphic-fetch";
 
 const BASE_URL = "https://swapi.dev/api";
 
-const fetchPeople = async (extFetch = fetch) =>
+const getPeople = async (extFetch = fetch) =>
   (await (await extFetch(BASE_URL + "/people/")).json()).results;
 
 const peopleWithEyeColor = async (color, allPeople) => {
   return allPeople.filter((p) => p.eye_color === color).map((p) => p.name);
+};
+
+const getAllPeopleWithEyeColor = () => {
+  return peopleWithEyeColor("blue", getPeople());
 };
 
 describe("peopleWithEyeColor", () => {
@@ -33,7 +37,7 @@ describe("fetchPeople", () => {
           Promise.resolve({ results: [{ name: "Luke" }, { name: "Darth" }] }),
       })
     );
-    const result = await fetchPeople(fetchSpy);
+    const result = await getPeople(fetchSpy);
     expect(result).toHaveLength(2);
     expect(result).toContainEqual({ name: "Luke" });
     expect(fetchSpy).toBeCalledWith(expect.stringMatching(/people\/$/));

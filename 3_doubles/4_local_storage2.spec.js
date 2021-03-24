@@ -9,7 +9,7 @@ const numberOfActiveTodos = (items) => items.filter((i) => i.active).length;
 const numberOfActiveTodosFromStorage = (getTodos = getTodosFromStorage) =>
   numberOfActiveTodos(getTodos());
 
-describe("numberOfActiveTodost", () => {
+describe("numberOfActiveTodos", () => {
   it("should count active todos", () => {
     const result = numberOfActiveTodos([
       { text: "Find Plans", active: false },
