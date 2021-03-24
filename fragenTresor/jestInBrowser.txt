@@ -1,0 +1,7 @@
+https://codepen.io/kvendrik/pen/QeWLMV
+https://github.com/kvendrik/jest-lite
+
+
+Discussion:
+  short: use Mocha or Jasmine instead
+  long: https://github.com/facebook/jest/issues/139
