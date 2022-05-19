@@ -36,7 +36,7 @@ describe("fetchPeople", () => {
     const result = await fetchPeople(fetchSpy);
     expect(result).toHaveLength(2);
     expect(result).toContainEqual({ name: "Luke" });
-    expect(fetchSpy).toBeCalledWith(expect.stringMatching(/people\/$/));
+    expect(fetchSpy).toBeCalledWith(expect.stringMatching(/swapi.dev\/api\/people\/$/));
   });
 });
 

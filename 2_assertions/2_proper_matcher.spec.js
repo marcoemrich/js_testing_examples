@@ -2,6 +2,7 @@ describe("don't ask for length, use proper assertion", () => {
   const someString = "Hello World";
 
   it("don't", () => expect(someString.length).toEqual(11));
+
   it("do", () => expect(someString).toHaveLength(11));
 });
 

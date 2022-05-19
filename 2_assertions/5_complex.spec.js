@@ -18,7 +18,7 @@ test("toHaveProperty", () => {
 
 test("toMatchObject", () => {
   const houseForSale = {
-    bath: true,
+    bath: false,
     bedrooms: 4,
     kitchen: {
       amenities: ["oven", "stove", "washer"],
@@ -27,7 +27,7 @@ test("toMatchObject", () => {
     },
   };
   const desiredHouse = {
-    bath: true,
+    bath: expect.any(Boolean),
     kitchen: {
       amenities: ["oven", "stove", "washer"],
       wallColor: expect.stringMatching(/white|yellow/),

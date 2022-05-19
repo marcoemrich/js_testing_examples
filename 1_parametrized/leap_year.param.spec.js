@@ -2,7 +2,7 @@ describe("leap year specs", () => {
   describe("A year is a leap year if", () => {
     //const expectLeapYear = year => expect(isLeapYear(year)).toBeTruthy();
 
-    it.each([2016, 1984, 4])(
+    it.each([2016, 1984, 4, 40])(
       "it is divisible by 4 but not by 100 (eg. %i)",
       (year) => expect(isLeapYear(year)).toBeTruthy()
     );

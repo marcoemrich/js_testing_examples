@@ -16,12 +16,13 @@ describe("peopleWithEyeColor", () => {
     fetch.resetMocks();
   });
   it("returns names of people with matching eye color", async () => {
-    fetch.mockResponseOnce(
+    fetch.mockResponse(
       JSON.stringify({
         results: [{ name: "Luke", eye_color: "blue" }, { name: "Darth" }],
       })
     );
     const result = await peopleWithEyeColor("blue");
-    expect(result).toEqual(["Luke"]);
+    const result2 = await peopleWithEyeColor("blue");
+    expect(result2).toEqual(["Luke"]);
   });
 });

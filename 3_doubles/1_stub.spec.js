@@ -1,30 +1,24 @@
+
+// test double
+
+// dummies -> spy
+// fake -> spy
+// stubs -> spy
+// mocks -> spy
+
 import { jest } from "@jest/globals";
 
 class Person {
   read() {
-    //fetch from API
+    return "dsafskhj"
   }
 
   fullName() {
     const personData = this.read();
+    console.log(personData);
     return personData.firstName + " " + personData.name;
   }
 }
-
-// let createPerson = (id) => {
-//   const read = function (id) {
-//     //fetch from API
-//   };
-
-//   return {
-//     read: read,
-
-//     fullName: function () {
-//       const personData = this.read(id);
-//       return personData.firstName + " " + personData.name;
-//     },
-//   };
-// };
 
 describe("Stub Example", () => {
   it("should return full name of Person from API", () => {

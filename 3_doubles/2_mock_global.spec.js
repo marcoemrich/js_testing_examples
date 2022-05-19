@@ -8,15 +8,17 @@ describe("Mock Example: greet", () => {
   beforeEach(() => {
     print.mockClear();
   });
+
+
   it("should print a greeting with Name", () => {
     greet("Alice");
 
     expect(print).toBeCalledWith("Hello Alice");
   });
+
   it("don't forget to clear", () => {
     // no execution
     expect(print).not.toBeCalledWith("Hello Alice");
   });
 });
 
-greet(console.log.bind(console), "Steve");
