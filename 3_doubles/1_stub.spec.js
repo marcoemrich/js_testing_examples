@@ -1,4 +1,3 @@
-
 // test double
 
 // dummies -> spy
@@ -10,12 +9,12 @@ import { jest } from "@jest/globals";
 
 class Person {
   read() {
-    return "dsafskhj"
+    return "dsafskhj";
   }
 
   fullName() {
     const personData = this.read();
-    console.log(personData);
+    // console.log(personData);
     return personData.firstName + " " + personData.name;
   }
 }

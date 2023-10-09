@@ -1,3 +1,5 @@
+import { jest } from "@jest/globals";
+
 class Person {
   constructor(firstName, name, city) {
     this.name = name;

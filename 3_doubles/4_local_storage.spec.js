@@ -16,7 +16,7 @@ describe("Mock Example: greet", () => {
       { text: "Get Out of House", active: true },
     ]);
 
-    localStorage.getItem("foo 1")
+    localStorage.getItem("foo 1");
 
     expect(numberOfActiveTodos()).toEqual(2);
   });
@@ -24,7 +24,7 @@ describe("Mock Example: greet", () => {
   it("don't forget to clear", () => {
     // no execution
 
-    console.log(localStorage.getItem.mock.calls)
+    // console.log(localStorage.getItem.mock.calls)
     expect(localStorage.getItem).not.toBeCalled();
   });
 });
