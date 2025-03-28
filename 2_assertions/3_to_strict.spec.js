@@ -8,8 +8,8 @@ class Person {
   }
   print() {
     // format is subject to change
-    // return `${this.name}, ${this.firstName.charAt(0)}. from ${this.city}`;
-    return `${this.name}, ${this.firstName.charAt(0)}. (${this.city})`;
+    return `${this.name}, ${this.firstName.charAt(0)}. from ${this.city}`;
+    // return `${this.name}, ${this.firstName.charAt(0)}. (${this.city})`;
   }
 }
 
