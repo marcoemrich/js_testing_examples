@@ -16,7 +16,11 @@ describe("Mock Example: greet", () => {
       { text: "Get Out of House", active: true },
     ]);
 
+<<<<<<< HEAD
     localStorage.getItem("foo 1");
+=======
+    // localStorage.getItem("foo 1")
+>>>>>>> d5e72c5 (mock -> spy, more example comments)
 
     expect(numberOfActiveTodos()).toEqual(2);
   });
